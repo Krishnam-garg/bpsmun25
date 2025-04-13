@@ -8,6 +8,15 @@ body, html {
     background-color: black;
   }  
 
+  ::-moz-selection { /* Code for Firefox */
+    background-color: #a9b5df8b;
+  }
+  
+  ::selection {
+    /* color: #A9B5DF; */
+    background-color: #a9b5df8b;
+  }
+
 /* .video-background {
     position: fixed;
     top: 0;
@@ -31,6 +40,8 @@ body, html {
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 .logo{
     padding-top: 20px;
@@ -62,28 +73,29 @@ body, html {
     position: absolute;
     align-items: center;
     justify-content: center;
-    height: auto;
-    width: auto;
     top: 150px;
     right: 0;
+    flex-direction: column;
+    height: 600px;
+    width: 300px;
+    justify-content: center;
+    background-color: #1B1F3B;
+    border: 3px  solid #A9B5DF;
+    border-radius:10px;
 }
 
 .menu{
+    top: 50px;
     display: flex;
-    flex-direction: column;
     height: auto;
     width: 300px;
-    justify-content: center;
     align-items: center;
-    background-color: #1B1F3B;
-    border: 1px solid #A9B5DF;
-    border-radius:10px;
+    flex-direction: column;
 }
 .menubut{
     height: 40px;
     width: 280px;
-    border-bottom:2px solid #D6DFF5;
-    border-radius:10px;
+    border-bottom:1px solid #D6DFF5;
     align-items: center;
     justify-content: center;
     text-decoration: none;
