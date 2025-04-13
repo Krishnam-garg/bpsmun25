@@ -11,6 +11,14 @@ body, html {
     
 
 }
+::-moz-selection { /* Code for Firefox */
+    background-color: #a9b5df8b;
+  }
+  
+  ::selection {
+    /* color: #A9B5DF; */
+    background-color: #a9b5df8b;
+  }
 a{
     text-decoration: none;
 }
@@ -72,29 +80,29 @@ a{
     position: absolute;
     align-items: center;
     justify-content: center;
-    height: auto;
-    width: auto;
-top: 230px;
+    top: 230px;
     right: 0;
+    flex-direction: column;
+    height: 600px;
+    width: 300px;
+    background-color: #1B1F3B;
+    border-left: 5px  solid #A9B5DF;
+    border-bottom: 5px  solid #A9B5DF;
+    border-radius:0 0 10px 10px;
 }
 
 .menu{
+    top: 50px;
     display: flex;
-    flex-direction: column;
     height: auto;
     width: 300px;
-    justify-content: center;
     align-items: center;
-    background-color: #1B1F3B;
-    border-radius:10px;
-    border: 1px solid #A9B5DF;
-
+    flex-direction: column;
 }
 .menubut{
     height: 40px;
     width: 280px;
-    border-bottom:2px solid #D6DFF5;
-    border-radius:10px;
+    border-bottom:1px solid #D6DFF5;
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -110,6 +118,7 @@ top: 230px;
     background-color: #2D3366;
     color: white;
 }
+
 
 .hamburger{
     display: none;
